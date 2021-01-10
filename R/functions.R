@@ -12,7 +12,7 @@ theme_ecpol <- function(){
     plot.title = element_blank(),
     plot.subtitle = element_blank(),
     plot.caption = element_blank(),
-    legend.position="none",
+    legend.position="top",
     legend.key = element_rect(fill = "transparent", colour = "transparent"),
     legend.title = element_blank(),
     axis.title.x = element_text(hjust = 0.5, size = 9.5,
