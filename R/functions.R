@@ -33,7 +33,8 @@ theme_ecpol <- function(){
 ##Palette
 
 palettes_ecpol <- list(
-  threecolors = c("#EFB43F","#00A47D","#225E9C"),
+  twocolors = c("#00A47D","#EFB43F"),
+  threecolors = c("#225E9C","#00A47D","#EFB43F"),
   fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C"),
   sixcolors = c("#E6007E","#E05656","#EFB43F","#00A47D","#225E9C","#404040"),
   eightcolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040","#1a1a1a"),
@@ -73,6 +74,7 @@ print.palette <- function(x, ...) {
   text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 1, family = "serif")
 }
 
+palette_two <- palette_ecpol("twocolors")
 palette_three <- palette_ecpol("threecolors")
 palette_four <- palette_ecpol("fourcolors")
 palette_six <- palette_ecpol("sixcolors")
