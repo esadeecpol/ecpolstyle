@@ -35,6 +35,8 @@ theme_ecpol <- function(){
 palettes_ecpol <- list(
   twocolors = c("#00A47D","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
+  semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
+  semaforo = c("#00A47D","#EFB43F","#E05656"),
   fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C"),
   sixcolors = c("#E6007E","#E05656","#EFB43F","#00A47D","#225E9C","#404040"),
   eightcolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040","#1a1a1a"),
@@ -75,6 +77,8 @@ print.palette <- function(x, ...) {
 }
 
 palette_two <- palette_ecpol("twocolors")
+palette_semaforoinverted <- palette_ecpol("semaforoinverted")
+palette_semaforo <- palette_ecpol("semaforo")
 palette_three <- palette_ecpol("threecolors")
 palette_four <- palette_ecpol("fourcolors")
 palette_six <- palette_ecpol("sixcolors")
