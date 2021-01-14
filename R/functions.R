@@ -77,7 +77,7 @@ print.palette <- function(x, ...) {
 }
 
 palette_two <- palette_ecpol("twocolors")
-palette_semaforoinverted <- palette_ecpol("semaforoinverted")
+palette_semaforoinverted <- palette_ecpol("semaforo_inverted")
 palette_semaforo <- palette_ecpol("semaforo")
 palette_three <- palette_ecpol("threecolors")
 palette_four <- palette_ecpol("fourcolors")
