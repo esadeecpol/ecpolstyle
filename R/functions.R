@@ -39,6 +39,8 @@ theme_ecpol <- function(){
 ##Palette
 
 palettes_ecpol <- list(
+  ksnet_ecpol = c("#00B2A9"),
+  ksnet_ecpol_two = c("#00B2A9", "#E05656"),
   twocolors = c("#00A47D","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
   semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
@@ -83,6 +85,8 @@ print.palette <- function(x, ...) {
   text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 1, family = "serif")
 }
 
+palette_ksnet <- palette_ecpol("ksnet_ecpol")
+palette_ksnet_two <- palette_ecpol("ksnet_ecpol_two")
 palette_two <- palette_ecpol("twocolors")
 palette_semaforoinverted <- palette_ecpol("semaforo_inverted")
 palette_semaforo <- palette_ecpol("semaforo")

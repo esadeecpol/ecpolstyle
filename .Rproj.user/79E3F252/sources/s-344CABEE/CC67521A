@@ -3,22 +3,22 @@
     "path": "~/Desktop/projects/ecpolstyle/R/functions.R",
     "project_path": "R/functions.R",
     "type": "r_source",
-    "hash": "968400077",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1611088858667.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "11,39",
-        "scrollLine": "1"
+        "cursorPosition": "88,17",
+        "scrollLine": "80"
     },
     "folds": "",
-    "lastKnownWriteTime": 1611091191,
+    "lastKnownWriteTime": 1611663671,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1611091191132,
+    "last_content_update": 1611663671904,
     "read_only": false,
     "read_only_alternatives": []
 }
