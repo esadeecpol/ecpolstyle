@@ -41,6 +41,7 @@ theme_ecpol <- function(){
 palettes_ecpol <- list(
   ksnet_ecpol = c("#00B2A9"),
   ksnet_ecpol_two = c("#00B2A9", "#E05656"),
+  onecolor = c("#00A47D"),
   twocolors = c("#00A47D","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
   semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
@@ -48,7 +49,9 @@ palettes_ecpol <- list(
   fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C"),
   fivecolors = c("#E05656","#EFB43F","#00A47D","#225E9C","#404040"),
   sixcolors = c("#E6007E","#E05656","#EFB43F","#00A47D","#225E9C","#404040"),
+  sevencolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040"),
   eightcolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040","#1a1a1a"),
+  ninecolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a"),
   tencolors = c("#952EA0","#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a")
 )
 palette_ecpol <- function(name, n, type = c("discrete", "continuous")) {
@@ -87,14 +90,17 @@ print.palette <- function(x, ...) {
 
 palette_ksnet <- palette_ecpol("ksnet_ecpol")
 palette_ksnet_two <- palette_ecpol("ksnet_ecpol_two")
+palette_one <- palette_ecpol("onecolors")
 palette_two <- palette_ecpol("twocolors")
 palette_semaforoinverted <- palette_ecpol("semaforo_inverted")
 palette_semaforo <- palette_ecpol("semaforo")
 palette_three <- palette_ecpol("threecolors")
 palette_four <- palette_ecpol("fourcolors")
-palette_ive <- palette_ecpol("fivecolors")
+palette_five <- palette_ecpol("fivecolors")
 palette_six <- palette_ecpol("sixcolors")
+palette_seven <- palette_ecpol("sevencolors")
 palette_eight <- palette_ecpol("eightcolors")
+palette_nine <- palette_ecpol("ninecolors")
 palette_ten <- palette_ecpol("tencolors")
 
 
