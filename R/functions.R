@@ -41,7 +41,7 @@ theme_ecpol <- function(){
 palettes_ecpol <- list(
   ksnet_ecpol = c("#00B2A9"),
   ksnet_ecpol_two = c("#00B2A9", "#E05656"),
-  onecolor = c("#00A47D"),
+  onecolors = c("#00A47D"),
   twocolors = c("#00A47D","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
   semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
