@@ -16,6 +16,7 @@ theme_ecpol <- function(){
                                   family="Mabry Pro Light",
                                   color = "#000000"),
     plot.caption = element_text(hjust = 0, size = 9.5,
+                                vjust = .5,
                                 family="Mabry Pro Light",
                                 color = "#777777"),
     legend.position="top",
@@ -44,6 +45,8 @@ palettes_ecpol <- list(
   onecolors = c("#00A47D"),
   twocolors = c("#00A47D","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
+  redgreen = c("#00A47D","#E05656"),
+  greenred = c("#E05656","#00A47D"),
   semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
   semaforo = c("#00A47D","#EFB43F","#E05656"),
   fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C"),
@@ -94,6 +97,8 @@ palette_one <- palette_ecpol("onecolors")
 palette_two <- palette_ecpol("twocolors")
 palette_semaforoinverted <- palette_ecpol("semaforo_inverted")
 palette_semaforo <- palette_ecpol("semaforo")
+palette_redgreen <- palette_ecpol("redgreen")
+palette_greenred <- palette_ecpol("greenred")
 palette_three <- palette_ecpol("threecolors")
 palette_four <- palette_ecpol("fourcolors")
 palette_five <- palette_ecpol("fivecolors")
