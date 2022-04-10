@@ -55,8 +55,9 @@ palettes_ecpol <- list(
   sevencolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040"),
   eightcolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040","#1a1a1a"),
   ninecolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a"),
-  tencolors = c("#952EA0","#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a")
-)
+  tencolors = c("#952EA0","#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a"),
+  continua = c("#efb43f", "#beb963", "#9ab776", "#7cb282", "#62ac8a", "#4aa58e", "#359d91", "#1f9592", "#0b8c92", "#0c8390", "#0d7a8c", "#0e7188", "#0e6983", "#0d607e", "#0d5878", "#0c5073", "#0b486d", "#0a4066", "#083860", "#06305a", "#052954", "#03224d", "#011b47", "#001440", "#000a3a")
+  )
 palette_ecpol <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
@@ -107,5 +108,6 @@ palette_seven <- palette_ecpol("sevencolors")
 palette_eight <- palette_ecpol("eightcolors")
 palette_nine <- palette_ecpol("ninecolors")
 palette_ten <- palette_ecpol("tencolors")
+palette_cont <- palette_ecpol("continua")
 
 
