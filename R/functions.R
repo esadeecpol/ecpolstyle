@@ -56,6 +56,7 @@ palettes_ecpol <- list(
   eightcolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#404040","#1a1a1a"),
   ninecolors = c("#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a"),
   tencolors = c("#952EA0","#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#404040","#1a1a1a"),
+  elevencolors = c("#952EA0","#E6007E","#E05656","#F27200","#EFB43F","#00A47D","#225E9C","#4B2991","#1d475c","#404040","#1a1a1a"),
   cont_short = c("#efb43f", "#beb963", "#9ab776", "#7cb282", "#62ac8a", "#4aa58e", "#359d91", "#1f9592", "#0b8c92", "#0c8390", "#0d7a8c", "#0e7188", "#0e6983", "#0d607e", "#0d5878", "#0c5073", "#0b486d", "#0a4066", "#083860", "#06305a", "#052954", "#03224d", "#011b47", "#001440", "#000a3a"),
   cont_long = c("#efb43f", "#ddb24c", "#cdb057", "#bcad61", "#adaa69", "#9da66f", "#8fa275", "#809e7a", "#73997e", "#659582", "#589084", "#4b8a86", "#3e8588", "#328088", "#257a89", "#177488", "#0e6f86", "#0f6982", "#0f637e", "#0f5d7a", "#0f5776", "#0e5172", "#0e4c6d", "#0d4669", "#0c4065", "#0b3b61", "#0a365c", "#083058", "#072b54", "#05264f", "#04214b", "#021c47", "#001742", "#00113e", "#000a3a"
 )
@@ -110,6 +111,7 @@ palette_seven <- palette_ecpol("sevencolors")
 palette_eight <- palette_ecpol("eightcolors")
 palette_nine <- palette_ecpol("ninecolors")
 palette_ten <- palette_ecpol("tencolors")
+palette_eleven <- palette_ecpol("elevencolors")
 palette_cont_short <- palette_ecpol("cont_short")
 palette_cont_long <- palette_ecpol("cont_long")
 
