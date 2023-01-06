@@ -38,8 +38,6 @@ theme_ecpol <- function(){
 #Basic discrete palettes
 
 palettes_ecpol <- list(
-  ksnet_ecpol = c("#00B2A9"),
-  ksnet_ecpol_two = c("#00B2A9", "#E05656"),
   onecolors = c("#00A47D"),
   twocolors = c("#00A47D","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
@@ -47,7 +45,7 @@ palettes_ecpol <- list(
   greenred = c("#E05656","#00A47D"),
   semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
   semaforo = c("#00A47D","#EFB43F","#E05656"),
-  fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C"),
+  fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C")
   )
 
 
@@ -69,8 +67,6 @@ palette_ecpol <- function(name, n) {
 }
 
 
-palette_ksnet <- palette_ecpol("ksnet_ecpol")
-palette_ksnet_two <- palette_ecpol("ksnet_ecpol_two")
 palette_one <- palette_ecpol("onecolors")
 palette_two <- palette_ecpol("twocolors")
 palette_semaforoinverted <- palette_ecpol("semaforo_inverted")
