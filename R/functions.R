@@ -29,7 +29,7 @@ theme_ecpol <- function(){
     axis.text.y = element_text(size = 12,
                                color = "grey27",
                                family="Mabry Pro Light"),
-    strip.text = element_text(face = "Mabry Pro Light", size = 12),
+    strip.text = element_text(family = "Mabry Pro Light", size = 12),
     strip.background = element_rect(fill = "transparent")
   )
 }
