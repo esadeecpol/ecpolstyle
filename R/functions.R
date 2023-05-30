@@ -115,3 +115,35 @@ print_palette <- function(x, ...) {
 
 print_gradient<-outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
 
+
+#Para que las fuentes se exporten bien a los gráficos
+
+if (!require(systemfonts)) {
+  install.packages("systemfonts")
+  library(systemfonts)
+}
+
+
+mabry <- system_fonts() %>% # Guardamos para ver los estilos de cada uno de los tipos de la familia
+  filter(family == "Mabry Pro") %>%
+  transmute(
+    family, style,
+    file = str_extract(path, "[\\w-]+\\.ttf$")
+  )
+# Guardamos para cada tipo:
+# Light
+mabry_light_path <- system_fonts() %>%
+  filter(family == "Mabry Pro", style == "Light") %>%
+  pull(path)
+systemfonts::register_font(
+  name = "Mabry Pro Light",
+  plain = mabry_light_path
+)
+# Medium
+mabry_med_path <- system_fonts() %>%
+  filter(family == "Mabry Pro", style == "Medium") %>%
+  pull(path)
+systemfonts::register_font(
+  name = "Mabry Pro Medium",
+  plain = mabry_med_path
+)
