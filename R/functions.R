@@ -149,4 +149,4 @@ print_gradient<-outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
       plain = mabry_med_path
       ) 
    
-  }
+   }
