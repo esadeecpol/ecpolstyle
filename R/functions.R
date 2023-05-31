@@ -147,6 +147,6 @@ print_gradient<-outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
     systemfonts::register_font(
       name = "Mabry Pro Medium",
       plain = mabry_med_path
-      ) 
+      )
    
    }
