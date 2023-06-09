@@ -125,30 +125,33 @@ print_gradient<-outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
 #' @import stringr
 #' @export
 import_fonts <- function() {
+  library(systemfonts)
+  library(dplyr)
+  library(stringr)
+  
   mabry <- system_fonts() %>%
     filter(family == "Mabry Pro") %>%
-    transmute(
-      family, style,
+    mutate(
       file = str_extract(path, "[\\w-]+\\.ttf$")
     )
   
-  mabry_light_path <- system_fonts() %>%
-    filter(family == "Mabry Pro", style == "Light") %>%
-    pull(path)
+  mabry_light_path <- mabry %>%
+    filter(style == "Light") %>%
+    pull(file)
   
   systemfonts::register_font(
     name = "Mabry Pro Light",
-    plain = mabry_light_path
+    regular = mabry_light_path
   )
   
-  mabry_med_path <- system_fonts() %>%
-    filter(family == "Mabry Pro", style == "Medium") %>%
-    pull(path)
+  mabry_med_path <- mabry %>%
+    filter(style == "Medium") %>%
+    pull(file)
   
   systemfonts::register_font(
     name = "Mabry Pro Medium",
-    plain = mabry_med_path
+    regular = mabry_med_path
   )
   
   invisible(NULL)
-}   
+}
