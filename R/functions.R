@@ -116,25 +116,24 @@ print_palette <- function(x, ...) {
 print_gradient<-outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
 
 
-   #Import Esade Fonts
-   
-fonts_ecpol <- function() {
-  library(systemfonts)
-  
-  if (!require(systemfonts)) {
-    install.packages("systemfonts")
-    library(systemfonts)
-  }
-  
-  mabry <- system_fonts()  |>  
-    filter(family == "Mabry Pro") |> 
+#' Importar fuentes
+#'
+#' Esta función importa las fuentes Mabry Pro Light y Mabry Pro Medium en R
+#' utilizando el paquete systemfonts.
+#' @import systemfonts
+#' @import dplyr
+#' @import stringr
+#' @export
+import_fonts <- function() {
+  mabry <- system_fonts() %>%
+    filter(family == "Mabry Pro") %>%
     transmute(
       family, style,
       file = str_extract(path, "[\\w-]+\\.ttf$")
     )
   
-  mabry_light_path <- system_fonts() |> 
-    filter(family == "Mabry Pro", style == "Light") |> 
+  mabry_light_path <- system_fonts() %>%
+    filter(family == "Mabry Pro", style == "Light") %>%
     pull(path)
   
   systemfonts::register_font(
@@ -142,8 +141,8 @@ fonts_ecpol <- function() {
     plain = mabry_light_path
   )
   
-  mabry_med_path <- system_fonts() |> 
-    filter(family == "Mabry Pro", style == "Medium") |> 
+  mabry_med_path <- system_fonts() %>%
+    filter(family == "Mabry Pro", style == "Medium") %>%
     pull(path)
   
   systemfonts::register_font(
@@ -151,5 +150,5 @@ fonts_ecpol <- function() {
     plain = mabry_med_path
   )
   
-  return(NULL)
-}
+  invisible(NULL)
+}   
