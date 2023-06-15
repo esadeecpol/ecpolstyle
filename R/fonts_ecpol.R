@@ -18,6 +18,6 @@ fonts_ecpol <- function() {
     filter(family == "Mabry Pro", style == "Medium") %>%
     pull(path)
   
-  assign("mabry_med", mabry_med_path, envir = .GlobalEnv)
+  assign("mabry_medium", mabry_med_path, envir = .GlobalEnv)
   systemfonts::register_font(name = "Mabry Pro Medium", plain = mabry_med_path)
 }
