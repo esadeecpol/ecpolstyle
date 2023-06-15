@@ -12,6 +12,7 @@ png_ecpol <- function(plot, filename = "", width = 18, height = 12, unit = "cm",
   )
 }
 
+# Función para guardar gráfcos en JPG
 jpg_ecpol <- function(plot, filename = "", width = 18, height = 12, unit = "cm", dpi = 300) {
   ggsave(
     plot = plot,
@@ -24,6 +25,7 @@ jpg_ecpol <- function(plot, filename = "", width = 18, height = 12, unit = "cm",
   )
 }
 
+# Función para guardar gráficos en PDF
 pdf_ecpol <- function(plot, filename = "", width = 18, height = 12, unit = "cm", dpi = 300) {
   ggsave(
     plot = plot,
