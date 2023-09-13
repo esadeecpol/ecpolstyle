@@ -37,3 +37,16 @@ pdf_ecpol <- function(plot, filename = "", width = 18, height = 12, unit = "cm",
     dpi = dpi
   )
 }
+
+# Función para guardar gráficos en PDF
+svg_ecpol <- function(plot, filename = "", width = 18, height = 12, unit = "cm", dpi = 300) {
+  ggsave(
+    plot = plot,
+    filename = filename,
+    device = 'svg',
+    width = width,
+    height = height,
+    unit = unit,
+    dpi = dpi
+  )
+}
