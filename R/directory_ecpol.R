@@ -6,7 +6,7 @@ directory_ecpol <- function() {
   base_dir <- getwd() # Obtenemos el directorio actual
   
   # Lista de carpetas
-  folders <- c("code", "input/raw", "input/data", "output/tables", "output/figures/png", "output/figures/svg", "content")
+  folders <- c("code", "input/raw", "input/data", "output/tables", "output/png", "output/svg", "content")
   
   # Crear carpetas
   for (folder in folders) {
